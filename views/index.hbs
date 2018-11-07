@@ -1,0 +1,171 @@
+<div class="header">
+  <h1 style="text-align:center">Send it parcel management system <img src="images/boxes.png" width="98" height="58" id="ima"></h1> 
+</div>
+<h1>{{ title }}</h1>
+<p>Welcome to {{ title }}</p>
+<h3>send it parcel management system</h3>
+<p><h1>Welcome to courier management system</h1></p>
+<p><h1></h1></p>
+<section><form action="/test/submit" method="post">
+   <table padding="2" cellspacing="2" align="center" width="100%">
+          <tbody><tr>
+            <td colspan="3"  align="right"><div ight">
+                <div n="left"><strong>Shipper info : </strong></div>
+            </div></td>
+          </tr>
+          <tr>
+            <td  align="right" width="138">Shipper Name   :</td>
+           
+            <td>
+			<input name="Shippername"  maxlength="100" size="40" type="TEXT">
+                </td>
+          </tr>
+          <tr>
+            <td  align="right">Phone   :</td>
+           
+            <td><input name="Shipperphone" id="Shipperphone" maxlength="13" size="40" type="TEXT"></td>
+          </tr>
+          <tr>
+            <td  align="right">Address   :</td>
+           
+            <td><span         <textarea name="Shipperaddress" cols="27" rows="2" id="Shipperaddress"></textarea>
+              *</span></td>
+          </tr>
+          <tr>
+            <td  align="right">&nbsp;</td>
+           
+           
+          </tr>
+          <tr>
+            <td colspan="3"  align="right"><div n="left"><strong>Receiver  info : </strong></div></td>
+          </tr>
+          <tr>
+            <td  align="right">Receiver Name : </td>
+           
+            <td><input name="Receivername" id="Receivername" maxlength="100" size="40" type="TEXT">
+                <span ></td>
+          </tr>
+          <tr>
+            <td  align="right">Phone : </td>
+           
+            <td><input name="Receiverphone" id="Receiverphone" maxlength="13" size="40" type="TEXT"></td>
+          </tr>
+          <tr>
+            <td  align="right"> Address: : </td>
+           
+            <td><span         <textarea name="Receiveraddress" cols="27" rows="2" id="Receiveraddress"></textarea>
+              *</span></td>
+          </tr>
+          <tr>
+            <td  align="right">&nbsp;</td>
+           
+           
+          </tr>
+          <tr>
+            <td colspan="3"  align="right"><div n="left"><strong>Shipment   info : </strong></div></td>
+          </tr>
+          <tr>
+            <td  align="right">Consignment No : </td>
+            
+            <td width="477"><input name="ConsignmentNo"   type="TEXT">
+                <span > </td>
+          </tr>
+          <tr>
+            <td  align="right">Type of Shipment  :</td>
+           
+            <td><select id="Shiptype" name="Shiptype">
+                <option value="Documents" selected="selected">Documents</option>
+                <option value="Parcel">Parcel</option>
+                <option value="Sentiments">Sentiments</option>
+            </select>
+			</td>
+          </tr>
+          <tr>
+            <td  align="right">Weight : </td>
+           
+            <td><input id="Weight" size="10" maxlength="10" name="Weight">
+              (kg)</td>
+          </tr>
+          <tr>
+            <td  align="right">Invoice no  :</td>
+           
+            <td><input name="Invoiceno" id="Invoiceno" size="40" maxlength="20" onKeyUp="check_phone('Invoiceno')" type="TEXT"></td>
+          </tr>
+          <tr>
+            <td  align="right">Qnty  :</td>
+           
+            <td><input name="Qnty" id="Qnty" maxlength="10" size="20" type="TEXT"></td>
+          </tr>
+          <tr>
+            <td  align="right">Booking Mode :</td>
+           
+            <td><select name="Bookingmode" id="Bookingmode">
+                <option selected="selected" value="Paid">Paid</option>
+                <option value="ToPay">ToPay</option>
+                <option value="TBB">TBB</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td  align="right">Total freight : </td>
+           
+            <td><input id="Totalfreight" size="10" maxlength="13" name="Totalfreight"></td>
+          </tr>
+          <tr>
+            <td  align="right">Mode : </td>
+           
+            <td><select name="Mode" id="Mode">
+                <option selected="selected" value="Air">Air</option>
+                <option value="Road">Road</option>
+                <option value="Train">Boat</option>
+				<option value="bus">Bus</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td  align="right"><span >Dept time : </span></td>
+           
+            <td><input name="Depttime" id="Depttime" maxlength="50" size="20" type="TEXT"></td>
+          </tr>
+          <tr>
+            <td  align="right">Destination Office:</td>
+           
+            <td><input name="Destination" id="Destination" maxlength="50" size="40" type="TEXT">
+                <span > </td>
+          </tr>
+          <tr>
+            <td  align="right">Pickup Date  :</td>
+           
+            <td><input name="Packupdate" id="Packupdate" readonly="True" style="cursor: text;" onClick="ds_sh(this);" maxlength="15" type="TEXT">
+                <span > </td>
+          </tr>
+          <tr>
+            <td  align="right" valign="top">Pickup Time  :</td>
+           
+            <td><input name="Pickuptime" id="Pickuptime" maxlength="50" size="20" type="TEXT"></td>
+          </tr>
+          <tr>
+            <td  align="right" valign="top">Status :</td>
+           
+            <td><select name="status" id="status">
+                <option selected="selected" value="In Transit">In Transit</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td  align="right" valign="top">Comments :</td>
+           
+            <td><textarea name="Comments" cols="40" rows="4" id="Comments"></textarea></td>
+          </tr>
+          <tr>
+            <td align="right"></td>
+           
+            <td><input name="Submit" type="submit" value="Add Courier"></td></tr
+
+</form>
+</section>
+
+<footer>
+<address style="text-align:center">
+Author:Nyayiha Kevin
+Email:nyayihakevin@gmail.com
+Tel:0786746170
+</address>
+</footer>
