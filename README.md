@@ -38,4 +38,10 @@ also you going to need to install handlebars in other to work with routing and a
 
 Endpoints for couriers.
 
+
+**starting the server**
+1.navigate into parcel,then in bin directory
+2.enter in bin directory (cd bin)
+3.and start the www server(node www to start the server)
+
 ##N.B thiss version is still under development some features may have not yet to be implemented.
