@@ -1,7 +1,7 @@
 {
 	"presets": [
 		"es2016",
-		"react"
+		""
 	],
 	"plugins": [
 		"transform-runtime",

@@ -100,8 +100,24 @@ router.get('/test/:Comments', function(req, res, next) {
   res.render('test', {output: req.params.Comments});
 });
 
+
+
+
+
+
+
+
+
+
+
+//post the information from the form 
+
 router.post('/test/submit', function(req, res, next) {
-  res.redirect('/test/...');
+  var Shippername = req.body.Shippername;
+  var Shipperphone = req.body.Shipperphone;
+  var Receivername = req.body.Receivername;
+  res.redirect('/test/' + Shippername + Shipperphone + Receivername);
+
 });
 
 module.exports = router;
