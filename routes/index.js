@@ -116,8 +116,11 @@ router.post('/test/submit', function(req, res, next) {
   var Shippername = req.body.Shippername;
   var Shipperphone = req.body.Shipperphone;
   var Receivername = req.body.Receivername;
-  res.redirect('/test/' + Shippername + Shipperphone + Receivername);
+  var Receiverphone = req.body.Receiverphone;
+  res.redirect('/test/' + Shippername + Shipperphone + Receivername + Receiverphone);
+
 
 });
+//router.delete('/test/delete/:Shippername', Shippername.delete);
 
 module.exports = router;
