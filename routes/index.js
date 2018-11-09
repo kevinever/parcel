@@ -100,8 +100,34 @@ router.get('/test/:Comments', function(req, res, next) {
   res.render('test', {output: req.params.Comments});
 });
 
+
+
+
+
+
+
+
+
+
+
+//post the information from the form 
+
 router.post('/test/submit', function(req, res, next) {
-  res.redirect('/test/...');
+  var Shippername = req.body.Shippername;
+  var Shipperphone = req.body.Shipperphone;
+  var Receivername = req.body.Receivername;
+  var Receiverphone = req.body.Receiverphone;
+  var Receiveraddress = req.body.Receiveraddress;
+  var ConsignmentNo = req.body.ConsignmentNo;
+  var Shiptype = req.body.Shiptype;
+  var Weight = req.body.Weight;
+  var Receiverphone = req.body.Receiverphone;
+  var Receiverphone = req.body.Receiverphone;
+
+  res.redirect('/test/' + Shippername  + Shipperphone + Receivername + Receiverphone + Receiveraddress+ConsignmentNo + Shiptype +Weight);
+
+
 });
+//router.delete('/test/delete/:Shippername', Shippername.delete);
 
 module.exports = router;

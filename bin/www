@@ -14,7 +14,7 @@ var http = require('http');
 
 var port = normalizePort(process.env.PORT || '7000');
 app.set('port', port);
-
+console.log('listening on prort 7000');
 /**
  * Create HTTP server.
  */
@@ -69,7 +69,7 @@ function onError(error) {
       process.exit(1);
       break;
     case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
+     // console.error(bind + ' is already in use');
       process.exit(1);
       break;
     default:
@@ -88,3 +88,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+
